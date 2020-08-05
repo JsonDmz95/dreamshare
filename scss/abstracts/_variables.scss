@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Fonts
+$primary-font: 'Montserrat', 'Open Sans', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+/// Font-size
+$body-font-size: 16px;
+$buttons-font-size: 18px;
+
+/// Copy text
+/// @type Color
+$text-color: #222222 !default;
+
+/// Default colors
+$white: #fff;
+$black: #000;
+$grey: #ccc;
+$wrongurl-color: #eee;
+
+// Company color pallete
+$primary-color: #0d3b69;
+$secondary-color: #2d88c1;
+$third-color: #ffcc00;
+
+// Button and hover color
+$btn-color: $third-color;
+$hover-color: $third-color;
+$internals-links: $hover-color;
+
+$facets-color: $secondary-color;
+$facets-title: $primary-color;
+$internals-titles: $primary-color;
+
+$body-color: $white;
+
+
+$base-url: '/assets/' !default;

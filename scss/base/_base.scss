@@ -57,12 +57,12 @@ a{
 
 /// Text selection colors
 ::-moz-selection{
-  background: $primary-color;
+  background: $secondary-color;
   color: $white;
 }
 
 ::selection{
-  background: $primary-color;
+  background: $secondary-color;
   color: $white;
 }
 

@@ -55,6 +55,60 @@
   }
 }
 
+#how{
+  .step-card{
+    height: 240px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 300px;
+    background-color: $secondary-color;
+    background-size: cover;
+      background-position: center bottom;
+    border-radius: 4px;
+    padding: 15px 25px;
+
+    &.step-1{
+      background-image: url(../img/step1.webp);
+    }
+
+    &.step-2{
+      background-image: url(../img/step2.webp);
+    }
+
+    &.step-3{
+      background-image: url(../img/step3.webp);
+    }
+
+    .step-number{
+      display: inline-block;
+      padding: 4px 15px;
+      background: $primary-color;
+      border-radius: 40px;
+      line-height: 13px;
+      font-size: 10px;
+      letter-spacing: letter-spacing(210, 10px);
+      color: $white;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .step-title{
+      font-size: 24px;
+      color: $white;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    .step-description{
+      font-weight: 300;
+      color: #E3E3E3;
+    }
+  }
+}
+
 @media (min-width: 768px){
   .banner{
     height: 700px;
@@ -82,6 +136,12 @@
 
     .section-title{
       margin-bottom: 35px;
+    }
+  }
+
+  #how{
+    .step-card{
+      height: 400px;
     }
   }
   

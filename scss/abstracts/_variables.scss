@@ -3,16 +3,16 @@
 // -----------------------------------------------------------------------------
 
 /// Fonts
-$primary-font: 'Montserrat', 'Open Sans', sans-serif;
+$primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
 
 /// Font-size
-$body-font-size: 16px;
-$buttons-font-size: 18px;
+$body-font-size: 14px;
+$buttons-font-size: 14px;
 
 /// Copy text
 /// @type Color
-$text-color: #222222 !default;
+$text-color: #666666 !default;
 
 /// Default colors
 $white: #fff;
@@ -21,18 +21,15 @@ $grey: #ccc;
 $wrongurl-color: #eee;
 
 // Company color pallete
-$primary-color: #0d3b69;
-$secondary-color: #2d88c1;
-$third-color: #ffcc00;
+$primary-color: #FF4E50; //red
+$secondary-color: #19D4CA; //teal
+$third-color: #FFA710; //orange
+$fourth-color: #667DF3; //purple
 
 // Button and hover color
-$btn-color: $third-color;
-$hover-color: $third-color;
-$internals-links: $hover-color;
-
-$facets-color: $secondary-color;
-$facets-title: $primary-color;
-$internals-titles: $primary-color;
+$btn-color: $primary-color;
+$hover-color: $fourth-color;
+// $internals-links: $hover-color;
 
 $body-color: $white;
 

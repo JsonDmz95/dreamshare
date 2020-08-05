@@ -10,15 +10,22 @@ body{
   color: $text-color;
 }
 
+.container-fluid{
+  max-width: 970px;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5{
   color: $primary-color;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.3;
   text-transform: none;
+  margin-top: 0px;
+  font-family: $secondary-font;
+  text-align: center;
 }
 
 /// Main titles
@@ -35,6 +42,7 @@ p{
 
 /// Basic styles for links
 a{
+  font-family: $secondary-font;
   color: $hover-color;
   line-height: 1.3;
   text-decoration: none;

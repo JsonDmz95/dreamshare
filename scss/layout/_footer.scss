@@ -1,28 +1,107 @@
-/// -----------------------------------------------------------------------------
-/// This file contains all styles related to the footer of the site/application.
-/// -----------------------------------------------------------------------------
-
 footer{
-  // background-color: $third-color;
+  margin-top: 40px;
+  padding: 20px 0px;
+  border-top: 2px solid $primary-color;
+
+  .logo-container{
+    text-align: center;
+    margin-bottom: 12px;
+
+    a{
+      font-size: 16px;
+      color: $primary-color;
+      position: relative;
+
+      &::after{
+        content: '';
+        height: 1px;
+        width: 0;
+        background: $primary-color;
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        top: auto;
+        right: 0;
+        left: auto;
+        transition: width ease 0.3s;
+      }
+
+      @include on-event{
+        text-decoration: none;
+
+        &::after{
+          width: 100%;
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+  }
+
+  .list-title{
+    text-align: center;
+  }
+
+  .footer-navigation{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li{
+      line-height: 1.85;
+
+      a{
+        color: #999999;
+      }
+    }
+  }
 }
 
-.footer-top{
+.designed-container{
+  text-align: center;
 }
 
-.footer-middle{
+@media (min-width: 768px){
+  footer{
+    margin-top: 100px;
+    padding-top: 37px;
+
+    .logo-container{
+      text-align: left;
+    }
+
+    
+  .list-title{
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .footer-navigation{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    li{
+      line-height: 1.85;
+
+      a{
+        color: #999999;
+      }
+    }
+  }
+  }
+
+  .designed-container{
+    text-align: right;
+  }
+
 }
-
-.footer-bottom{
-}
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 1200px) {
-
-}
+  

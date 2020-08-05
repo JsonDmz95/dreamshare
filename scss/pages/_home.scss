@@ -161,6 +161,85 @@
       margin-bottom: 0px;
     }
   }
+
+  .others-container{
+    .btn-default{
+      width: 100%;
+      max-width: 300px;
+      padding: 11px 22px;
+
+      background: transparent;
+      color: $primary-color;
+      border: 2px solid $primary-color;
+
+      @include on-event{
+        background: $primary-color;
+        color: $white;
+      }
+    }
+  }
+}
+
+#activities{
+  .activity-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    height: 120px;
+    padding: 20px;
+    background: $primary-color;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+
+    background-size: cover;
+    background-position: center center;
+
+    &.sports{
+      background-image: url("../img/activity-sport.webp");
+      background-position: top center;
+    }
+
+    &.health{
+      background-image: url("../img/activity-health.webp");
+    }
+
+    &.extreme{
+      background-image: url("../img/activity-extreme.webp");
+      background-position: top center;
+    }
+
+    &.games{
+      background-image: url("../img/activity-games.webp");
+    }
+
+
+    &.culture{
+      background-image: url("../img/activity-culture.webp");
+    }
+
+
+    &.enjoyment{
+      background-image: url("../img/activity-enjoyment.webp");
+    }
+
+    &.traveling{
+      background-image: url("../img/activity-traveling.webp");
+      background-position: top center;
+    }
+
+
+
+
+    .activity-title{
+      font-size: 22px;
+      line-height: 1.27;
+      color: $white;
+      margin: 0;
+    }
+  }
 }
 
 @media (min-width: 768px){
@@ -203,6 +282,20 @@
   #partners{
     .partner-item{
       margin-bottom: 35px;
+    }
+
+    .others-container{
+      .btn-default{
+        width: auto;
+      }
+    }
+  }
+
+  #activities{
+    .activity-card{
+      height: 300px;
+      max-width: none;
+      margin-bottom: 30px;
     }
   }
   
